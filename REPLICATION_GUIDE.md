@@ -1,4 +1,4 @@
-# Guía de Replicación: Validador de Billetes Bolivianos
+# Guía de Replicación: Validador de Billetes
 
 Esta guía contiene toda la información necesaria para replicar la lógica y el funcionamiento de esta aplicación en **Google AI Studio** o cualquier otro entorno de desarrollo.
 
@@ -8,7 +8,7 @@ Para que la IA identifique correctamente el billete, utiliza el siguiente prompt
 
 **Prompt Sugerido:**
 ```text
-Analyze this image of a Bolivian banknote. 
+Analyze this image of a banknote. 
 1. Identify the denomination (must be 10, 20, 50, 100, or 200).
 2. Extract the serial number (the numeric part).
 3. Extract the series letter (the single letter at the end of the serial number, e.g., 'A', 'B', 'C', etc.).

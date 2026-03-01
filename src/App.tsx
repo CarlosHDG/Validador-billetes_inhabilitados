@@ -50,7 +50,7 @@ export default function App() {
     try {
       const base64Data = image.split(',')[1];
       
-      const prompt = `Analyze this image of a Bolivian banknote. 
+      const prompt = `Analyze this image of a banknote. 
       1. Identify the denomination (must be 10, 20, 50, 100, or 200).
       2. Extract the serial number (the numeric part).
       3. Extract the series letter (the single letter at the end of the serial number, e.g., 'A', 'B', 'C', etc.).
@@ -115,7 +115,7 @@ export default function App() {
             </div>
             <h1 className="font-semibold text-lg tracking-tight">Validador de Billetes</h1>
           </div>
-          <span className="text-xs font-medium text-zinc-400 uppercase tracking-widest">Bolivia</span>
+          <span className="text-xs font-medium text-zinc-400 uppercase tracking-widest">Seguridad</span>
         </div>
       </header>
 
@@ -272,9 +272,13 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="max-w-3xl mx-auto px-4 py-12 text-center">
-        <p className="text-xs text-zinc-400 font-medium uppercase tracking-widest">
-          :D
+      <footer className="max-w-3xl mx-auto px-4 py-12 text-center space-y-4">
+        <p className="text-[10px] text-zinc-400 font-medium uppercase tracking-widest leading-relaxed">
+          Esta no es una aplicación oficial. Los datos son referenciales y basados en reportes públicos.
+          No existe relación con ninguna institución financiera o gubernamental.
+        </p>
+        <p className="text-[10px] text-zinc-300 font-bold uppercase tracking-[0.2em]">
+          Sistema de Verificación
         </p>
       </footer>
     </div>
