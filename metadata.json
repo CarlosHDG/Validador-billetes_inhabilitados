@@ -1,0 +1,7 @@
+{
+  "name": "Validador de Billetes Bolivianos",
+  "description": "Aplicación para validar billetes bolivianos mediante reconocimiento de imagen y verificación de números de serie inhabilitados.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
