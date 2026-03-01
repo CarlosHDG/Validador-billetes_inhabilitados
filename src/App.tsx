@@ -274,7 +274,7 @@ export default function App() {
 
       <footer className="max-w-3xl mx-auto px-4 py-12 text-center">
         <p className="text-xs text-zinc-400 font-medium uppercase tracking-widest">
-          Sistema de Validación de Seguridad • 2024
+          :D
         </p>
       </footer>
     </div>
