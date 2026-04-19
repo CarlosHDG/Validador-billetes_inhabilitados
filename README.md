@@ -1,20 +1,27 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Bolivia Currency Validator (LLM-Powered)
 
-# Run and deploy your AI Studio app
+A specialized tool designed to automate the verification of currency serial numbers in Bolivia, providing immediate peace of mind by identifying restricted or discontinued series.
 
-This contains everything you need to run your app locally.
+## ⚠️ The Context
+Following a series of unfortunate events in Bolivia, certain bill series were declared illegal or restricted by authorities. This created a significant issue for the general public: the need to constantly check long, complex serial numbers against official lists to ensure their money was legitimate. This manual process was not only tedious but prone to human error, causing confusion and distrust in daily transactions.
 
-View your app in AI Studio: https://ai.studio/apps/a344f602-943b-4d08-ab75-ad0febe0b25c
+## 💡 The Solution
+I developed this application to eliminate the manual burden of checking serial numbers. By leveraging the multimodal capabilities of **Gemini**, users can simply snap a photo of their bill. The model processes the image and extracts the information based on a specific prompt, instantly cross-referencing the serial number against the official database of restricted series.
 
-## Run Locally
+## 🚀 Why Google AI Studio?
+The core decision to use **Google AI Studio** was driven by accessibility and scalability:
+* **Fast Development:** It allowed for rapid prototyping and deployment without complex infrastructure.
+* **Democratization:** By using the free tier provided by Google AI Studio, the solution is accessible to anyone. 
+* **Portability:** Users can easily copy the project and run it on their mobile devices, ensuring that a tool to verify currency security is available to everyone, everywhere, at no cost.
 
-**Prerequisites:**  Node.js
 
+## 📝 How it Works
+1.  **Capture:** The user takes a photo of the bill's serial number.
+2.  **Analyze:** The image is sent to Gemini via Google AI Studio with a structured prompt to ensure precise extraction of the serial number.
+3.  **Validate:** The system performs a pattern check against the government-issued lists of restricted series.
+4.  **Result:** The application provides immediate confirmation on the bill's status.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+### 🛡️ Disclaimer
+*This tool is intended for personal convenience and verification purposes. It does not replace the official procedures or the final verification by authorized financial institutions.*
